@@ -2,7 +2,13 @@
 	"name": "qmlext",
 	"displayName": "qmlext",
 	"description": "QML language support.",
-	"version": "0.0.1",
+	"version": "1.0.1",
+	"publisher": "qsyttkx",
+	"icon": "images/icon.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/qsyttkx/vscode-qml"
+	},
 	"engines": {
 		"vscode": "^1.68.0"
 	},

@@ -18,8 +18,8 @@ class QmlDocumentFormatter implements vscode.DocumentFormattingEditProvider {
 		if (normalize) {
 			param = param + "-n "
 		}
-		const ws = vscode.workspace.getWorkspaceFolder(document.uri)?.name;
-		const result = child_process.execSync(qmlformat + param + tmpfile, { cwd: ws }).toString();
+		// const ws = vscode.workspace.getWorkspaceFolder(document.uri)?.name;
+		const result = child_process.execSync(qmlformat + param + tmpfile).toString();
 		var firstLine = document.lineAt(0);
 		var lastLine = document.lineAt(document.lineCount - 1);
 		var textRange = new vscode.Range(firstLine.range.start, lastLine.range.end);
